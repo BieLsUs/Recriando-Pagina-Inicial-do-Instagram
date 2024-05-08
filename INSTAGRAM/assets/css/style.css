@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* varáveis-color */
+:root {
+    --linkColor: #006effce;
+    --background-color:white;
+    --border-color:#d3d3d3ab;
+}
+
+body {
+    background: whitesmoke;
+}
+
+/* Celular-img */
+.cell {
+    display: flex;
+    justify-content: center;
+}
+.cell img {
+    width: 40.5rem;
+    height: auto;
+}
+
+/* Main-caixa-de-login */
+.box {
+    gap: 1rem;
+    padding: 1.5rem 5.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    left: 65%;
+    top: 15%;
+
+    background: var(--background-color);
+    border: solid 2px var(--border-color);
+}
+.logo__box img {
+    width: 150px;
+}
+.profile__box img {
+    width: 80px;
+    border-radius: 100px;
+}
+
+/* botões-de-acesso */
+.btn__box {
+    gap: 2.75rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn__box a:nth-child(1){
+    padding: 0.5rem 0.65rem;
+
+    background: var(--linkColor);
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 300;
+    color: white;
+}
+.btn__box a:hover:nth-child(1) {
+    cursor: pointer;
+
+    background: #005ed8b2;
+
+    transition: .2s ease-in-out;
+}
+.btn__box a:nth-child(2) {
+    
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: var(--linkColor);
+}
+.btn__box a:hover:nth-child(2) {
+    color: #005ed8;
+}
+
+/* Main-exceções */
+.exception {
+    width: 32%;
+    padding: 1rem 4rem;
+
+    position: absolute;
+    left: 65%;
+    top: 63%;
+
+    text-align: center;
+    background: var(--background-color);
+    border: solid 2px var(--border-color);
+}
+.exception__main a {
+    text-decoration: none;
+    color: var(--linkColor);
+
+}
+.exception__main a:hover {
+    color: #005ed8;
+}
+.exception__main {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+/* App-main */
+.app__main {
+
+    position: absolute;
+    top: 78%;
+    left: 68.1%;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app__main img {
+    cursor: pointer;
+    
+    width: 10rem;
+    height: auto;
+    padding: 1rem;
+}
+
+/* Midia-query */
+@media screen and (max-width: 1285px) {
+
+    .box {
+        position: static;
+    }
+    .exception {
+        width: 100%;
+        height: auto;
+        margin: 0.5rem 0 0 0;
+
+        position: static;
+    }
+    .app__main {
+        margin: 1rem 0 0 0;
+
+        position: static;
+    }
+
+    .btn__box {
+        text-align: center;
+    }
+}
