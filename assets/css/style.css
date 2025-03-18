@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* varáveis-color */
+:root {
+    --linkColor: #006effce;
+    --linkColor-text: #005ed8e1;
+    --background-color:white;
+    --border-color:#d3d3d3ab;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: inline-flex;
+    justify-content: center;
+    
+    background: whitesmoke;
+}
+
+/* Main - Principal */
+#principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Celular-img */
+.post__cell {
+    flex-basis: 50vw;
+}
+.post__cell img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main-caixa-de-login */
+.box {
+    gap: 1rem;
+
+    display: flex;
+    flex-basis: 35vw;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Box-1 */
+.box__loginRegister{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    gap: 1.5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--background-color);
+    border: solid 2px var(--border-color);
+}
+
+.loginRegister__logo img {
+    width: 100%;
+    height: auto;
+}
+.loginRegister__profile img {
+    width: 80px;
+    margin: 0.6rem 0 0 0;
+
+    border-radius: 50%;
+}
+/* botões-de-acesso */
+.loginRegister__btn {
+    margin: 0.5rem 0 0 0;
+    gap: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/* btn-1 - entrar na conta */
+.loginRegister__btn a:nth-child(1){
+    padding: 0.55rem 0.7rem;
+
+    background: var(--linkColor);
+    border-radius: 5px;
+
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+
+    transition: .2s linear;
+}
+.loginRegister__btn a:hover:nth-child(1) {
+    background: #005fdbb2;
+}
+/* btn-2 - sair(ou remover) da conta*/
+.loginRegister__btn a:nth-child(2) {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: var(--linkColor);
+
+    transition: .2s linear;
+}
+.loginRegister__btn a:hover:nth-child(2) {
+    color: var(--linkColor-text);
+}
+/* Main-exceções */
+.box__exception {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    background: var(--background-color);
+    border: solid 2px var(--border-color);
+}
+.exception__main a {
+    text-decoration: none;
+    color: var(--linkColor);
+
+}
+.exception__main a:hover {
+    color: var(--linkColor-text);
+}
+.exception__main {
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+/* Download-App */
+.box__app {
+    gap: 1.2rem;
+
+    display: flex;
+    flex-flow: column wrap;
+
+    text-align: center;
+} .box__app h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app__store img {
+    width: 35%;
+    height: auto;
+    margin: 0 0.25rem;
+
+    cursor: pointer;
+}

@@ -1,0 +1,103 @@
+ /* Midia-query */
+ @media screen and (min-width: 2000px) {
+
+     /* Box-1 - LogiRigister*/
+     .box__loginRegister {
+         width: 100%;
+         height: 35vh;
+     }
+
+     .loginRegister__profile img {
+         width: 150px;
+     }
+
+     /* btn-1 - entrar na conta */
+     .loginRegister__btn a:nth-child(1) {
+         padding: 0.8rem 0.95rem;
+
+         font-size: x-large;
+     }
+
+     /* btn-2 - sair(ou remover) da conta*/
+     .loginRegister__btn a:nth-child(2) {
+         font-size: larger;
+     }
+
+     /* Main-exceções */
+     .box__exception {
+         width: 100%;
+         height: 10vh;
+     }
+
+     .exception__main {
+         font-size: larger;
+     }
+
+     /* Download-App -- Text */
+     .box__app h5 {
+         font-size: larger;
+     }
+ }
+
+ @media screen and (max-width: 1250px) {
+
+     /* Main */
+     #principal {
+         margin: 1rem 0 0 0;
+     }
+
+     /* Box-1 - LogiRigister*/
+     .box__loginRegister {
+         width: 100%;
+         height: auto;
+         padding: 1rem;
+     }
+ }
+
+ @media screen and (max-width: 900px) {
+    body {
+        background: linear-gradient(-110deg, #4169E1e7, #FF1493e7, #ffd900e7) no-repeat;
+    }
+
+     /* Main - principal */
+     #principal {
+         width: 90%;
+
+         flex-flow: column wrap;
+     }
+
+     /* Celular - Post */
+     .post__cell {
+         display: none;
+     }
+
+     /* section - Box */
+     .box {
+         gap: 1rem;
+
+         flex-basis: 0;
+     }
+     .app__main {
+         margin: 1rem 0 0 0;
+
+         position: static;
+     }
+     .btn__box {
+         text-align: center;
+     }
+
+     /* Download-App */
+     .app__store img {
+         width: 25%;
+         height: auto;
+     }
+ }
+
+ @media screen and (max-width: 600px) {
+
+     /* Download-App */
+     .app__store img {
+         width: 35%;
+         height: auto;
+     }
+ }
